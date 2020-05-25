@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rona Ticket Event Registration</title>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+    <body>
+        <form action="../confirmation/register.php" method="POST">
+        
+            <label>First Name</label>
+            <input type="text" name="fname">
+
+            <label>Last Name</label>
+            <input type="text" name="lname">
+
+            <br>
+
+            <label>E-Mail</label>
+            <input type="email" name="email">
+
+            <label>Phone Number</label>
+            <input type="number" name="phno">
+
+            <br>
+
+            <label>Address</label>
+            <input type="text" name="address">
+
+            <br>
+
+            <div class="g-recaptcha" data-sitekey=""></div>
+
+            <button type="submit" value="Submit">Submit</button>
+        
+        </form>
+    </body>
+</html>
